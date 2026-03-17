@@ -1,0 +1,16 @@
+api_platform:
+  title: Sport Venues API
+  version: 1.0.0
+  defaults:
+    stateless: true
+    cache_headers:
+      vary: ["Content-Type", "Authorization", "Origin"]
+  mapping:
+    paths:
+      - "%kernel.project_dir%/src/Api"
+      - "%kernel.project_dir%/src/Entity"
+  swagger:
+    api_keys:
+      JWT:
+        name: Authorization
+        type: header
