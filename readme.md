@@ -107,3 +107,20 @@ ApiResource → Provider → Service → Repository → Database
 - DTO provides a stable response contract
 - Custom state provider allows raw SQL for geospatial queries (`ST_Distance_Sphere`)
 - Service layer separates business logic from data access
+
+## Screenshots
+
+**Swagger**
+
+![Swagger Overview](screenshots/swagger-overview.png)
+![Swagger Get Venues](screenshots/swagger-get-venues.png)
+
+**Postman**
+
+![Login](screenshots/postman-login.png)
+![Get Venues](screenshots/postman-get-venues.png)
+![Location Filter](screenshots/postman-location-filter.png)
+
+**Tests**
+
+![Tests Passing](screenshots/tests-passing.png)
