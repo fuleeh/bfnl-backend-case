@@ -74,7 +74,9 @@ docker compose exec php-fpm php vendor/bin/phpunit
 
 ## Docs
 
-`http://localhost:49000/api/docs`
+Interactive API docs at `http://localhost:49000/api/docs` — log in, click **Authorize** and paste your JWT token as `Bearer YOUR_TOKEN`.
+
+> To test without location filters, clear the lat/lng/distance fields before executing.
 
 ## Architecture
 
