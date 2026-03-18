@@ -5,6 +5,8 @@ api_platform:
     stateless: true
     cache_headers:
       vary: ["Content-Type", "Authorization", "Origin"]
+    pagination_items_per_page: 30
+    pagination_maximum_items_per_page: 100
   mapping:
     paths:
       - "%kernel.project_dir%/src/Api"

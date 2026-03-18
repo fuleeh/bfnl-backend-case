@@ -4,7 +4,7 @@
     "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
     "This file is @generated automatically"
   ],
-  "content-hash": "eb7e6db5530dafde2e482f8f98c01ca7",
+  "content-hash": "b99eba07c6c8633ea0b1e0c93f70d8f3",
   "packages": [
     {
       "name": "api-platform/core",
@@ -2007,6 +2007,75 @@
         "source": "https://github.com/php-fig/log/tree/3.0.2"
       },
       "time": "2024-09-11T13:17:53+00:00"
+    },
+    {
+      "name": "symfony/asset",
+      "version": "v7.1.6",
+      "source": {
+        "type": "git",
+        "url": "https://github.com/symfony/asset.git",
+        "reference": "0dcd51490d7fc9fbf3c8f5aec6df182920fc0426"
+      },
+      "dist": {
+        "type": "zip",
+        "url": "https://api.github.com/repos/symfony/asset/zipball/0dcd51490d7fc9fbf3c8f5aec6df182920fc0426",
+        "reference": "0dcd51490d7fc9fbf3c8f5aec6df182920fc0426",
+        "shasum": ""
+      },
+      "require": {
+        "php": ">=8.2"
+      },
+      "conflict": {
+        "symfony/http-foundation": "<6.4"
+      },
+      "require-dev": {
+        "symfony/http-client": "^6.4|^7.0",
+        "symfony/http-foundation": "^6.4|^7.0",
+        "symfony/http-kernel": "^6.4|^7.0"
+      },
+      "type": "library",
+      "autoload": {
+        "psr-4": {
+          "Symfony\\Component\\Asset\\": ""
+        },
+        "exclude-from-classmap": [
+          "/Tests/"
+        ]
+      },
+      "notification-url": "https://packagist.org/downloads/",
+      "license": [
+        "MIT"
+      ],
+      "authors": [
+        {
+          "name": "Fabien Potencier",
+          "email": "fabien@symfony.com"
+        },
+        {
+          "name": "Symfony Community",
+          "homepage": "https://symfony.com/contributors"
+        }
+      ],
+      "description": "Manages URL generation and versioning of web assets such as CSS stylesheets, JavaScript files and image files",
+      "homepage": "https://symfony.com",
+      "support": {
+        "source": "https://github.com/symfony/asset/tree/v7.1.6"
+      },
+      "funding": [
+        {
+          "url": "https://symfony.com/sponsor",
+          "type": "custom"
+        },
+        {
+          "url": "https://github.com/fabpot",
+          "type": "github"
+        },
+        {
+          "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+          "type": "tidelift"
+        }
+      ],
+      "time": "2024-10-25T15:11:02+00:00"
     },
     {
       "name": "symfony/cache",
@@ -4986,6 +5055,199 @@
       "time": "2025-07-15T13:41:35+00:00"
     },
     {
+      "name": "symfony/twig-bridge",
+      "version": "v7.1.10",
+      "source": {
+        "type": "git",
+        "url": "https://github.com/symfony/twig-bridge.git",
+        "reference": "c027c54611cd194273b924c8d24d9706695171ff"
+      },
+      "dist": {
+        "type": "zip",
+        "url": "https://api.github.com/repos/symfony/twig-bridge/zipball/c027c54611cd194273b924c8d24d9706695171ff",
+        "reference": "c027c54611cd194273b924c8d24d9706695171ff",
+        "shasum": ""
+      },
+      "require": {
+        "php": ">=8.2",
+        "symfony/translation-contracts": "^2.5|^3",
+        "twig/twig": "^3.9"
+      },
+      "conflict": {
+        "phpdocumentor/reflection-docblock": "<3.2.2",
+        "phpdocumentor/type-resolver": "<1.4.0",
+        "symfony/console": "<6.4",
+        "symfony/form": "<6.4",
+        "symfony/http-foundation": "<6.4",
+        "symfony/http-kernel": "<6.4",
+        "symfony/mime": "<6.4",
+        "symfony/serializer": "<6.4",
+        "symfony/translation": "<6.4",
+        "symfony/workflow": "<6.4"
+      },
+      "require-dev": {
+        "egulias/email-validator": "^2.1.10|^3|^4",
+        "league/html-to-markdown": "^5.0",
+        "phpdocumentor/reflection-docblock": "^3.0|^4.0|^5.0",
+        "symfony/asset": "^6.4|^7.0",
+        "symfony/asset-mapper": "^6.4|^7.0",
+        "symfony/console": "^6.4|^7.0",
+        "symfony/dependency-injection": "^6.4|^7.0",
+        "symfony/emoji": "^7.1",
+        "symfony/expression-language": "^6.4|^7.0",
+        "symfony/finder": "^6.4|^7.0",
+        "symfony/form": "^6.4|^7.0",
+        "symfony/html-sanitizer": "^6.4|^7.0",
+        "symfony/http-foundation": "^6.4|^7.0",
+        "symfony/http-kernel": "^6.4|^7.0",
+        "symfony/intl": "^6.4|^7.0",
+        "symfony/mime": "^6.4|^7.0",
+        "symfony/polyfill-intl-icu": "~1.0",
+        "symfony/property-info": "^6.4|^7.0",
+        "symfony/routing": "^6.4|^7.0",
+        "symfony/security-acl": "^2.8|^3.0",
+        "symfony/security-core": "^6.4|^7.0",
+        "symfony/security-csrf": "^6.4|^7.0",
+        "symfony/security-http": "^6.4|^7.0",
+        "symfony/serializer": "^6.4.3|^7.0.3",
+        "symfony/stopwatch": "^6.4|^7.0",
+        "symfony/translation": "^6.4|^7.0",
+        "symfony/web-link": "^6.4|^7.0",
+        "symfony/workflow": "^6.4|^7.0",
+        "symfony/yaml": "^6.4|^7.0",
+        "twig/cssinliner-extra": "^2.12|^3",
+        "twig/inky-extra": "^2.12|^3",
+        "twig/markdown-extra": "^2.12|^3"
+      },
+      "type": "symfony-bridge",
+      "autoload": {
+        "psr-4": {
+          "Symfony\\Bridge\\Twig\\": ""
+        },
+        "exclude-from-classmap": [
+          "/Tests/"
+        ]
+      },
+      "notification-url": "https://packagist.org/downloads/",
+      "license": [
+        "MIT"
+      ],
+      "authors": [
+        {
+          "name": "Fabien Potencier",
+          "email": "fabien@symfony.com"
+        },
+        {
+          "name": "Symfony Community",
+          "homepage": "https://symfony.com/contributors"
+        }
+      ],
+      "description": "Provides integration for Twig with various Symfony components",
+      "homepage": "https://symfony.com",
+      "support": {
+        "source": "https://github.com/symfony/twig-bridge/tree/v7.1.10"
+      },
+      "funding": [
+        {
+          "url": "https://symfony.com/sponsor",
+          "type": "custom"
+        },
+        {
+          "url": "https://github.com/fabpot",
+          "type": "github"
+        },
+        {
+          "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+          "type": "tidelift"
+        }
+      ],
+      "time": "2024-12-19T14:23:39+00:00"
+    },
+    {
+      "name": "symfony/twig-bundle",
+      "version": "v7.1.6",
+      "source": {
+        "type": "git",
+        "url": "https://github.com/symfony/twig-bundle.git",
+        "reference": "af902314a71fb412ae412094f7e1d7e49594507b"
+      },
+      "dist": {
+        "type": "zip",
+        "url": "https://api.github.com/repos/symfony/twig-bundle/zipball/af902314a71fb412ae412094f7e1d7e49594507b",
+        "reference": "af902314a71fb412ae412094f7e1d7e49594507b",
+        "shasum": ""
+      },
+      "require": {
+        "composer-runtime-api": ">=2.1",
+        "php": ">=8.2",
+        "symfony/config": "^6.4|^7.0",
+        "symfony/dependency-injection": "^6.4|^7.0",
+        "symfony/http-foundation": "^6.4|^7.0",
+        "symfony/http-kernel": "^6.4|^7.0",
+        "symfony/twig-bridge": "^6.4|^7.0",
+        "twig/twig": "^3.0.4"
+      },
+      "conflict": {
+        "symfony/framework-bundle": "<6.4",
+        "symfony/translation": "<6.4"
+      },
+      "require-dev": {
+        "symfony/asset": "^6.4|^7.0",
+        "symfony/expression-language": "^6.4|^7.0",
+        "symfony/finder": "^6.4|^7.0",
+        "symfony/form": "^6.4|^7.0",
+        "symfony/framework-bundle": "^6.4|^7.0",
+        "symfony/routing": "^6.4|^7.0",
+        "symfony/stopwatch": "^6.4|^7.0",
+        "symfony/translation": "^6.4|^7.0",
+        "symfony/web-link": "^6.4|^7.0",
+        "symfony/yaml": "^6.4|^7.0"
+      },
+      "type": "symfony-bundle",
+      "autoload": {
+        "psr-4": {
+          "Symfony\\Bundle\\TwigBundle\\": ""
+        },
+        "exclude-from-classmap": [
+          "/Tests/"
+        ]
+      },
+      "notification-url": "https://packagist.org/downloads/",
+      "license": [
+        "MIT"
+      ],
+      "authors": [
+        {
+          "name": "Fabien Potencier",
+          "email": "fabien@symfony.com"
+        },
+        {
+          "name": "Symfony Community",
+          "homepage": "https://symfony.com/contributors"
+        }
+      ],
+      "description": "Provides a tight integration of Twig into the Symfony full-stack framework",
+      "homepage": "https://symfony.com",
+      "support": {
+        "source": "https://github.com/symfony/twig-bundle/tree/v7.1.6"
+      },
+      "funding": [
+        {
+          "url": "https://symfony.com/sponsor",
+          "type": "custom"
+        },
+        {
+          "url": "https://github.com/fabpot",
+          "type": "github"
+        },
+        {
+          "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+          "type": "tidelift"
+        }
+      ],
+      "time": "2024-09-25T14:20:29+00:00"
+    },
+    {
       "name": "symfony/type-info",
       "version": "v7.1.10",
       "source": {
@@ -5481,6 +5743,86 @@
         }
       ],
       "time": "2024-09-17T12:49:58+00:00"
+    },
+    {
+      "name": "twig/twig",
+      "version": "v3.24.0",
+      "source": {
+        "type": "git",
+        "url": "https://github.com/twigphp/Twig.git",
+        "reference": "a6769aefb305efef849dc25c9fd1653358c148f0"
+      },
+      "dist": {
+        "type": "zip",
+        "url": "https://api.github.com/repos/twigphp/Twig/zipball/a6769aefb305efef849dc25c9fd1653358c148f0",
+        "reference": "a6769aefb305efef849dc25c9fd1653358c148f0",
+        "shasum": ""
+      },
+      "require": {
+        "php": ">=8.1.0",
+        "symfony/deprecation-contracts": "^2.5|^3",
+        "symfony/polyfill-ctype": "^1.8",
+        "symfony/polyfill-mbstring": "^1.3"
+      },
+      "require-dev": {
+        "php-cs-fixer/shim": "^3.0@stable",
+        "phpstan/phpstan": "^2.0@stable",
+        "psr/container": "^1.0|^2.0",
+        "symfony/phpunit-bridge": "^5.4.9|^6.4|^7.0"
+      },
+      "type": "library",
+      "autoload": {
+        "files": [
+          "src/Resources/core.php",
+          "src/Resources/debug.php",
+          "src/Resources/escaper.php",
+          "src/Resources/string_loader.php"
+        ],
+        "psr-4": {
+          "Twig\\": "src/"
+        }
+      },
+      "notification-url": "https://packagist.org/downloads/",
+      "license": [
+        "BSD-3-Clause"
+      ],
+      "authors": [
+        {
+          "name": "Fabien Potencier",
+          "email": "fabien@symfony.com",
+          "homepage": "http://fabien.potencier.org",
+          "role": "Lead Developer"
+        },
+        {
+          "name": "Twig Team",
+          "role": "Contributors"
+        },
+        {
+          "name": "Armin Ronacher",
+          "email": "armin.ronacher@active-4.com",
+          "role": "Project Founder"
+        }
+      ],
+      "description": "Twig, the flexible, fast, and secure template language for PHP",
+      "homepage": "https://twig.symfony.com",
+      "keywords": [
+        "templating"
+      ],
+      "support": {
+        "issues": "https://github.com/twigphp/Twig/issues",
+        "source": "https://github.com/twigphp/Twig/tree/v3.24.0"
+      },
+      "funding": [
+        {
+          "url": "https://github.com/fabpot",
+          "type": "github"
+        },
+        {
+          "url": "https://tidelift.com/funding/github/packagist/twig/twig",
+          "type": "tidelift"
+        }
+      ],
+      "time": "2026-03-17T21:31:11+00:00"
     },
     {
       "name": "willdurand/negotiation",
