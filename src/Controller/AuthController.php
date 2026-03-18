@@ -62,6 +62,18 @@ class AuthController extends AbstractController
             ], Response::HTTP_BAD_REQUEST);
         }
 
+        if (strlen($data['password']) < 6) {
+            return $this->json([
+                'message' => 'Password must be at least 6 characters',
+            ], Response::HTTP_BAD_REQUEST);
+        }
+        
+        if (!filter_var($data['email'], FILTER_VALIDATE_EMAIL)) {
+            return $this->json([
+                'message' => 'Invalid email address',
+            ], Response::HTTP_BAD_REQUEST);
+        }
+
         $existingUser = $this->entityManager->getRepository(User::class)->findOneBy(['email' => $data['email']]);
 
         if ($existingUser) {
