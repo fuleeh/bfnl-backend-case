@@ -78,6 +78,23 @@ Interactive API docs at `http://localhost:49000/api/docs` — log in, click **Au
 
 > To test without location filters, clear the lat/lng/distance fields before executing.
 
+## Project Structure
+
+```
+src/
+├── Api/
+│   └── SportVenues/
+│       ├── ApiResource/    # API Platform resource definition
+│       ├── Dto/            # Response DTOs
+│       │   └── DtoMapper/  # Entity to DTO mapping
+│       ├── Service/        # Business logic
+│       └── State/          # Custom state provider
+│           └── Provider/   # Provider implementation
+├── Controller/             # Auth endpoints (login, register)
+├── Entity/                 # Doctrine entities
+└── Repository/             # Database queries
+```
+
 ## Architecture
 
 ```
